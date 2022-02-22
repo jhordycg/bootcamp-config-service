@@ -1,11 +1,13 @@
 spring:
+  security:
+    user:
+      name: NTT_Data
+      password: NTT_D4t4
   cloud:
     config:
       server:
         git:
           uri: https://github.com/jhordycg/bootcamp-configurations.git
           default-label: development
-  security:
-    user:
-      name: NTT_Data
-      password: NTT_D4t4
+  application:
+    name: config-service

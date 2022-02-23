@@ -1,3 +1,10 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URI:http://192.168.0.200:8761/eureka}
+  instance:
+    prefer-ip-address: on
+
 spring:
   security:
     user:
@@ -9,5 +16,3 @@ spring:
         git:
           uri: https://github.com/jhordycg/bootcamp-configurations.git
           default-label: development
-  application:
-    name: config-service
